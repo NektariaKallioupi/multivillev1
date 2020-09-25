@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.multivillev1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".searchStudent"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity
+            android:name=".TeacherMainPage"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity android:name=".viewer_pdf" />
+        <activity
+            android:name=".stats"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".revisionTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".selectedNumberTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".revisionTestIntro"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".testsPerNumber"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".selectTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".lessonSelected"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".lessons"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".StudentMainPage"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".teacherUnderDevelopment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teacherSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".selectSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loadingScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

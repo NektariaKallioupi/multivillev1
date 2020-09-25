@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".lessonSelected">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:background="@android:color/darker_gray"
+        android:scaleType="fitXY"
+        android:src="@drawable/slide1_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/previousSlideButton"
+        android:layout_width="96dp"
+        android:layout_height="79dp"
+        android:background="@drawable/previousbutton"
+        android:fontFamily="@font/amaranth"
+        android:onClick="previousSlide"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <Button
+        android:id="@+id/nextSlideButton"
+        android:layout_width="100dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/nextbutton"
+        android:fontFamily="@font/amaranth"
+        android:onClick="nextSlide"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toEndOf="@+id/previousSlideButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <Button
+        android:id="@+id/backToLessonsMenuBtn"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:background="@drawable/backlessonsbutton"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/gifView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
